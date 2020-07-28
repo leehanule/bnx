@@ -236,13 +236,13 @@ body {
 }
 
 .mobile-top-bar .btn-type-1 {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     position: relative;
 }
 
 .mobile-top-bar .btn-type-1>i {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -255,5 +255,5 @@ body {
 }
 
 .mobile-top-bar .logo {
-    margin-top: 7px;
+    margin-top: 11px;
 }
