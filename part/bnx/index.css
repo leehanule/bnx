@@ -238,13 +238,13 @@ html, body {
 }
 
 .mobile-top-bar .btn-type-1 {
-  width:30px;
-  height:30px;
+  width:50px;
+  height:50px;
   position:relative;
 }
 
 .mobile-top-bar .btn-type-1 > i {
-  font-size:1.3rem;
+  font-size:1.5rem;
   position:absolute;
   top:50%;
   left:50%;
@@ -252,7 +252,7 @@ html, body {
 }
 
 .mobile-top-bar .logo {
-  margin-top:7px;
+  margin-top:16px;
 }
 
 /* 모바일 사이드 바 시작 */
@@ -266,10 +266,13 @@ html, body {
   background-color:rgba(0,0,0,0);
   transition:left 0.1s, background-color 0.3s;
   overflow-y:auto;
+  z-index: 101;
 }
 
-html.mobile-side-bar-active, html.mobile-side-bar-active > body {
-  overflow:hidden;
+@media ( max-width:780px ) {
+  html.mobile-side-bar-active, html.mobile-side-bar-active > body {
+    overflow:hidden;
+  }
 }
 
 html.mobile-side-bar-active .mobile-side-bar {
