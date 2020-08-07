@@ -5,7 +5,6 @@ html {
   font-family: "Noto Sans KR", sans-serif;
 }
 
-
 /* 노말라이즈 */
 body, ul, li {
   margin:0;
@@ -305,14 +304,11 @@ html.mobile-side-bar-active .mobile-side-bar {
   padding:10px 0;
 }
 
-.mobile-side-bar .content .menu-box-1 ul > li > a:not(:only-child)::after {
-  content:"[+]";
-  float:right;
-  margin-right:5px;
-}
-
-.mobile-side-bar .content .menu-box-1 ul > li.active > a:not(:only-child)::after {
-  content:"[-]";
+.mobile-side-bar .content .menu-box-1 ul > li > a :not(:only-child)::after {
+  content:" \f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight:900;
+  float: right;
 }
 
 .mobile-side-bar .content .menu-box-1 ul {
