@@ -276,7 +276,7 @@ html, body {
 
 html.mobile-side-bar-active .mobile-side-bar {
   left:0;
-  background-color:rgba(0,0,0,.5);
+  background-color:rgba(0,0,0,.6);
 }
 
 .mobile-side-bar .content {
@@ -288,11 +288,13 @@ html.mobile-side-bar-active .mobile-side-bar {
 }
 
 .mobile-side-bar .content > .logo-box-1 {
-  padding:0 10px;
+  padding:10px 10px;
+  border-bottom:1px solid #ccc;
 }
 
 .mobile-side-bar .content > .logo-box-1 > .logo {
   width:60px;
+  margin-top:3px;
 }
 
 .mobile-side-bar .content > .logo-box-1 > .btn-close {
@@ -301,22 +303,35 @@ html.mobile-side-bar-active .mobile-side-bar {
 }
 
 .mobile-side-bar .content .menu-box-1 ul > li > a {
-  padding:10px 0;
+  padding:10px 0 10px 10px;
+  font-size:0.85rem;
 }
 
-.mobile-side-bar .content .menu-box-1 ul > li > a :not(:only-child)::after {
-  content:" \f105";
+.mobile-side-bar .content .menu-box-1 ul > li {
+  border-bottom:1px solid #ccc;
+}
+
+.mobile-side-bar .content .menu-box-1 ul ul > li {
+  border-bottom:0;
+  border-top:1px solid #ccc;
+}
+
+.mobile-side-bar .content .menu-box-1 ul > li > a:not(:only-child)::after  {
+  content: "\f105";
   font-family: "Font Awesome 5 Free";
   font-weight:900;
-  float: right;
+  float:right;
+  margin-right:10px;
+  margin-top:3px;
 }
 
-.mobile-side-bar .content .menu-box-1 ul {
-  padding-left:10px;
+.mobile-side-bar .content .menu-box-1 ul > li:hover > a:not(:only-child)::after {
+  transform:rotate(90deg);
 }
 
 .mobile-side-bar .content .menu-box-1 > ul ul {
   display:none;
+  background:#e8e8e8;
 }
 
 .mobile-side-bar .content .menu-box-1 ul > li.active > ul {
