@@ -102,13 +102,14 @@ html, body {
 
 .menu-bar > .menu-box-1 > ul > li {
   width:calc(100% / 7);
+  position: relative;
 }
 
 .menu-bar > .menu-box-1 > ul > li > a {
+  position:relative;
   font-size:0.8rem;
   font-weight:bold;
   text-align:center;
-  position:relative;
   padding:5px 0;
 }
 
@@ -133,9 +134,48 @@ html, body {
   width:2px;
 }
 
+.menu-bar > .menu-box-1 > ul > li > div {
+  position: absolute;
+  display: none;
+  left: 0;
+  width: 100%;
+  padding-top: 10px;
+  z-index: 10;
+}
+
+.menu-bar > .menu-box-1 > ul > li > div::before {
+  content:"";
+  display:block;
+  height:10px;
+  position:absolute;
+  width:100%;
+  bottom:100%;
+}
+
+.menu-bar > .menu-box-1 > ul > li > div > ul{
+  background-color:rgba(255,255,255,0.8);
+  border-top: 1px solid rgb(173, 173, 173);
+  border-bottom: 1px solid rgb(173, 173, 173);
+}
+
+.menu-bar > .menu-box-1 > ul > li:hover > div {
+  display: block;
+}
+
+.menu-bar > .menu-box-1 > ul > li > div > ul > li > a {
+  color: #858585;
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 3px 0;
+}
+
+.menu-bar > .menu-box-1 > ul > li > div > ul > li > a:hover {
+  color: black;
+}
+
 /* 배너바 시작 */
 .banner-bar {
-  margin-top: 20px;
+  margin-top: 10px;
   overflow-x: hidden;
 }
 
