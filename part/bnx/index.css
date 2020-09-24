@@ -134,13 +134,13 @@ html, body {
   width:2px;
 }
 
-<<<<<<< HEAD
 .menu-bar > .menu-box-1 > ul ul {
   display: none;
   position: absolute;
   z-index: 10;
   width: 100%;
-=======
+}
+
 .menu-bar > .menu-box-1 > ul > li > div {
   position: absolute;
   display: none;
@@ -159,14 +159,12 @@ html, body {
   bottom:100%;
 }
 
-.menu-bar > .menu-box-1 > ul > li > div > ul{
-  background-color:rgba(255,255,255,0.8);
->>>>>>> 17f7bcee8daa2dc46892d8c392016a3d3aa624cf
+.menu-bar > .menu-box-1 > ul > li > div > ul {
   border-top: 1px solid rgb(173, 173, 173);
   border-bottom: 1px solid rgb(173, 173, 173);
+  background-color:rgba(255,255,255,0.8);
 }
 
-<<<<<<< HEAD
 .menu-bar > .menu-box-1 > ul ul > li {
   background-color:rgba(255,255,255,0.8);
 }
@@ -177,9 +175,7 @@ html, body {
   padding: 5px 0;
 }
 
-.menu-bar > .menu-box-1 > ul > li:hover > ul {
-  display: block;
-=======
+
 .menu-bar > .menu-box-1 > ul > li:hover > div {
   display: block;
 }
@@ -191,9 +187,8 @@ html, body {
   padding: 3px 0;
 }
 
-.menu-bar > .menu-box-1 > ul > li > div > ul > li > a:hover {
-  color: black;
->>>>>>> 17f7bcee8daa2dc46892d8c392016a3d3aa624cf
+.menu-bar > .menu-box-1 > ul > li > div > ul > li:hover > a{
+  text-decoration: underline;
 }
 
 /* 배너바 시작 */
