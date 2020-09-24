@@ -134,19 +134,12 @@ html, body {
   width:2px;
 }
 
-.menu-bar > .menu-box-1 > ul ul {
-  display: none;
-  position: absolute;
-  z-index: 10;
-  width: 100%;
-}
-
 .menu-bar > .menu-box-1 > ul > li > div {
-  position: absolute;
   display: none;
+  position: absolute;
+  top: calc(100% + 9px);
   left: 0;
   width: 100%;
-  padding-top: 10px;
   z-index: 10;
 }
 
@@ -159,35 +152,23 @@ html, body {
   bottom:100%;
 }
 
-.menu-bar > .menu-box-1 > ul > li > div > ul {
+.menu-bar > .menu-box-1 > ul > li > div > ul{
   border-top: 1px solid rgb(173, 173, 173);
   border-bottom: 1px solid rgb(173, 173, 173);
-  background-color:rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,0.8);
 }
 
-.menu-bar > .menu-box-1 > ul ul > li {
-  background-color:rgba(255,255,255,0.8);
-}
-
-.menu-bar > .menu-box-1 > ul ul > li > a {
-  font-size: 0.7rem;
-  text-align: center;
-  padding: 5px 0;
-}
-
-
-.menu-bar > .menu-box-1 > ul > li:hover > div {
-  display: block;
-}
-
-.menu-bar > .menu-box-1 > ul > li > div > ul > li > a {
-  color: #858585;
+.menu-bar > .menu-box-1 > ul > li > div > ul > li > a{
   font-size: 0.7rem;
   text-align: center;
   padding: 3px 0;
 }
 
-.menu-bar > .menu-box-1 > ul > li > div > ul > li:hover > a{
+.menu-bar > .menu-box-1 > ul > li:hover > div {
+  display: block;
+}
+
+.menu-bar > .menu-box-1 > ul > li > div > ul > li:hover > a {
   text-decoration: underline;
 }
 
