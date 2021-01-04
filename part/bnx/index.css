@@ -273,40 +273,39 @@ body {
   width: 25%;
 }
 
-@media (min-width: 751px) {
+@media ( min-width:751px ) {
   .banner-bar-2 > ul {
-    position: relative;
+    position:relative;
   }
-
-  .banner-bar-2 > ul > li:nth-last-child(1),
-  .banner-bar-2 > ul > li:nth-last-child(2) {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  
+  .banner-bar-2 > ul > li:nth-last-child(1), .banner-bar-2 > ul > li:nth-last-child(2) {
+    position:absolute;
+    bottom:0;
+    left:0;
   }
-
+  
   .banner-bar-2 > ul > li:nth-last-child(1) {
-    left: 25%;
+    left:25%;
   }
 }
 
-@media (max-width: 750px) {
+@media ( max-width:750px ) {
   .banner-bar-2 > ul > li:nth-child(3n + 1) {
-    width: 66.6666%;
+    width:66.6666%;
   }
 
   .banner-bar-2 > ul > li {
-    width: 33.3333%;
+    width:33.3333%;
   }
 }
 
-@media (max-width: 400px) {
+@media ( max-width:400px ) {
   .banner-bar-2 > ul > li:nth-child(3n + 1) {
-    width: 100%;
+    width:100%;
   }
 
   .banner-bar-2 > ul > li {
-    width: 50%;
+    width:50%;
   }
 }
 /* 배너바2 끝 */
